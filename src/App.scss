@@ -1,0 +1,66 @@
+p {
+  margin: 8px 0px;
+}
+
+.App {
+  background-color: hsl(212, 45%, 89%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(0, 0%, 100%);
+  padding: 8px;
+  border: 1px solid hsl(0, 0%, 90%);
+  border-radius: 8px;
+  width: 300px;
+  margin: 0 auto;
+
+  .logo-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  img {
+    max-width: 100%;
+  max-height: 100%; // Add this line
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  }
+
+}
+
+.main-content {
+  text-align: center;
+  padding:8px 20px;
+  margin-top: 8px;
+
+   .main-heading{
+    font-weight: 700;
+    font-size: 18px;
+  }
+  
+   .content {
+    font-weight: 400;
+    color: hsl(212, 45%, 89%);
+  }
+
+}
+
+@media screen and (max-width: 375px){
+  .main {
+    width: 100%;
+    margin: 0 10px
+  }
+
+
+}
+
